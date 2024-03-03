@@ -1,26 +1,55 @@
-body {
-    color: #1c1c20;
-    font-family: 'Oxygen', sans-serif;
-}
-
+/* Add this CSS for navbar */
 .navbar {
     border: 0;
     border-radius: 0;
 }
 
-.navbar-default .navbar-brand{
+.navbar-default .navbar-brand {
     color: #1c1c20;
 }
 
-h2 {
-    margin-top: 20px;
+.navbar-collapse {
+    text-align: center; /* Center the menu items for mobile view */
 }
 
+.navbar-toggler {
+    border: none; /* Remove border from the toggler button */
+}
+
+.navbar-nav {
+    margin-top: 10px; /* Add margin top to the navbar items */
+}
+
+/* Hide navbar items on desktop and tablet view */
+.navbar-nav .nav-item {
+    display: none;
+}
+
+/* Show navbar items only on mobile view */
+.navbar-nav .nav-item.visible-xs {
+    display: block;
+}
+
+/* Add background color to the dropdown menu */
+.dropdown-menu {
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+/* Add this CSS for the page heading */
+h2.text-center {
+    margin-top: 20px; /* Keep the existing margin */
+}
+
+/* Add this CSS for the section */
 section {
     border: 1px solid #000;
-    margin-top: 7%;
-    margin-bottom: 3%;
-    padding: 5%;
-    background-color: rgba(255, 0, 0, .7);
-    
+    margin-top: 7%; /* Keep the existing margin */
+    margin-bottom: 3%; /* Keep the existing margin */
+    padding: 5%; /* Keep the existing padding */
+    background-color: rgba(255, 0, 0, 0.7); /* Update the background color */
+}
+
+/* Add this CSS to make the section taller */
+.col-xs-12 {
+    height: 1000px; /* Set the height to 1000px */
 }

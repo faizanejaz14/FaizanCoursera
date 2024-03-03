@@ -1,55 +1,75 @@
-/* Add this CSS for navbar */
-.navbar {
-    border: 0;
-    border-radius: 0;
+@font-face
+{
+	font-family: pointsoft;
+	src: url("Point Soft Semi Bold.otf") ;
+}
+body {
+  font-size: 16px;
+  color: rgba(34, 33, 33, 0.884);
+  background-color:white;
+  font-family: pointsoft;
 }
 
-.navbar-default .navbar-brand {
-    color: #1c1c20;
+#header-nav {
+  background-color:#999999;
+  border-radius: 0;
+  border: 1px;
+  min-height: 70px;
 }
 
-.navbar-collapse {
-    text-align: center; /* Center the menu items for mobile view */
+.navbar-brand h1 {
+  font-family: pointsoft;
+  color: black;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  line-height: .75;
 }
 
-.navbar-toggler {
-    border: none; /* Remove border from the toggler button */
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
 }
 
-.navbar-nav {
-    margin-top: 10px; /* Add margin top to the navbar items */
+#nav-list a {
+  color:black;
+  font-weight: bold;
 }
 
-/* Hide navbar items on desktop and tablet view */
-.navbar-nav .nav-item {
-    display: none;
+#nav-list a:hover {
+  background:whitesmoke;
 }
 
-/* Show navbar items only on mobile view */
-.navbar-nav .nav-item.visible-xs {
-    display: block;
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid black;
 }
 
-/* Add background color to the dropdown menu */
-.dropdown-menu {
-    background-color: rgba(255, 0, 0, 0.7);
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
 }
 
-/* Add this CSS for the page heading */
-h2.text-center {
-    margin-top: 20px; /* Keep the existing margin */
+#page-title {
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
-/* Add this CSS for the section */
-section {
-    border: 1px solid #000;
-    margin-top: 7%; /* Keep the existing margin */
-    margin-bottom: 3%; /* Keep the existing margin */
-    padding: 5%; /* Keep the existing padding */
-    background-color: rgba(255, 0, 0, 0.7); /* Update the background color */
+#main-text {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-/* Add this CSS to make the section taller */
-.col-xs-12 {
-    height: 1000px; /* Set the height to 1000px */
+.text-background {
+  height: auto;
+  padding: 20px 40px 20px 40px;
+  background-color:#999999;
+  overflow: hidden;
+}
+
+h3 {
+  font-weight: bold;
+}
+.footer-copyright{
+  padding: 50px;
 }
